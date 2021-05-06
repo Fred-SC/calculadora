@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <!-- Main div -->
+    <div class="app">
+        
+        <!-- Header -->
+        <header class="header">
+            <h1>Calculadora - JS</h1>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <section class="calculator">
+                
+                <!-- Output layout -->
+                <div class="output">
+                    <input type="text" id="output" readonly>
+                </div>
+                <input type="text" id="preview" readonly>
+                <div class="moreOpt">
+                    <button class="history">
+                        <i class="far fa-clock"></i>
+                    </button>
+                </div>
+
+                <p class="linebreak"></p>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <div class="line">
+                        <button class="special clear">c</button>
+                        <button class="special backspace">ce</button>
+                        <button class="operatorEsp percent">&#37</button>
+                        <button class="operator divided">&#247</button>
+                    </div>
+                    <div class="line">
+                        <button class="common">7</button>
+                        <button class="common">8</button>
+                        <button class="common">9</button>
+                        <button class="operator multi">&#215</button>
+                    </div>
+                    <div class="line">
+                        <button class="common">4</button>
+                        <button class="common">5</button>
+                        <button class="common">6</button>
+                        <button class="operator">-</button>
+                    </div>
+                    <div class="line">
+                        <button class="common">3</button>
+                        <button class="common">2</button>
+                        <button class="common">1</button>
+                        <button class="operator">+</button>
+                    </div>
+                    <div class="line">
+                        <button class="change">+/-</button>
+                        <button class="common">0</button>
+                        <button class="dot">.</button>
+                        <button class="operator equals">=</button>
+                    </div>
+                </div>
+
+                <!-- History -->
+                <div class="history_layout">
+                    <ul class="history_list"></ul>
+
+                    <div class="history_footer">
+                        <button class="clearHistory">Limpar histórico</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>By: Fred da Cruz & Tayana Ramalho / Aloísio Souza</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
